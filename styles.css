@@ -109,6 +109,8 @@ li a:hover {
   text-shadow: 0px 0px 20px antiquewhite;
 }
 
+/*********   welcome section   **********/
+
 #welcome-section {
   background-color: var(--clr-bg1);
   height: 100vh;
@@ -122,11 +124,13 @@ li a:hover {
 #welcome-section h1 {
   font-size: 4rem;
   color: var(--clr-font);
+  z-index: 9;
 }
 
 #welcome-section p {
   font-size: 2rem;
   color: var(--clr-font);
+  z-index: 9;
 }
 
 /*********   Project section   **********/
@@ -323,10 +327,12 @@ overflow: hidden;
   height: 100vh;
   background-color: var(--clr-bg1);
   position: relative;
+  /* z-index: 6; */
 }
 
 #contacttitle {
   margin: 3rem;
+  z-index: 8;
 }
 
 #contacttitle h1 {
@@ -334,11 +340,13 @@ overflow: hidden;
   color: aliceblue;
   margin: 1rem;
   font-size: 3rem;
+  /* z-index: 9; */
 }
 
 #contacttitle p {
-  color: rgb(240, 252, 255);
+  color: aliceblue;
   font-size: 1.5rem;
+  /* z-index: 9; */
   /* border: 2px solid ; */
 }
 
@@ -380,3 +388,30 @@ overflow: hidden;
 .scroll{
     scroll-snap-align: start;
 } */
+
+/*************    waves  *********************/
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+.spacer3 {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.layer1 {
+  background-image: url("./waves.svg");
+}
