@@ -1,4 +1,4 @@
 # Personal Portfolio Webpage
 
 
- Dark Mode waith waves spacer CSS only.
+ Dark Mode with waves spacer CSS only.
