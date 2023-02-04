@@ -4,6 +4,8 @@
   --clr-bg2: #e3caa5;
   --clr-header-footer: #ad8b73;
 
+  --spacer: url("./waves.svg");
+
   --clr-footer: black;
 }
 
@@ -52,9 +54,37 @@ input[type="radio"]:checked {
   --clr-bg2: #064663;
   --clr-header-footer: #041c32;
   --clr-footer: var(--clr-font);
+  --spacer: url("./waves-dark.svg");
 }
 ul:has(#dark:checked) .logo > img {
   content: url(https://i.ibb.co/qrvznX9/Layer-4-copy.png);
+}
+
+/*************    waves  *********************/
+
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+}
+.spacer3 {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  transform: rotate(180deg);
+  z-index: 0;
+}
+
+.layer1 {
+  background-image: var(--spacer);
 }
 
 /*****    Navbar    *****/
@@ -388,30 +418,3 @@ overflow: hidden;
 .scroll{
     scroll-snap-align: start;
 } */
-
-/*************    waves  *********************/
-
-.spacer {
-  aspect-ratio: 960/300;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-}
-.spacer3 {
-  aspect-ratio: 960/300;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  transform: rotate(180deg);
-  z-index: 0;
-}
-
-.layer1 {
-  background-image: url("./waves.svg");
-}
